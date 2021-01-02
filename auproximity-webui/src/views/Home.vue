@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <Ad placementId='5f77421c5c013163f93ea725' />
+    <Ad name='top' />
     <v-row>
       <v-col cols="12" md="4">
         <ServerConnector @joinroom="joinRoom($event)" />
@@ -23,7 +23,7 @@
         <DiscordServer :discord-link="discordUrl"/>
       </v-col>
     </v-row>
-    <Ad placementId='5f77424b5c013163f93ea727' />
+    <Ad name='bottom' />
   </v-container>
 </template>
 
