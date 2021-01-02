@@ -67,7 +67,9 @@
     },
     "rules": {
       "quotes": "error",
-      "semi": "error"
+      "semi": "error",
+      "@typescript-eslint/camelcase": 0,
+      "space-before-function-paren": 0
     }
   },
   "browserslist": [

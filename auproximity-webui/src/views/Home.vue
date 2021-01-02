@@ -1,10 +1,11 @@
 <template>
   <v-container>
+    <Ad placementId='5f77421c5c013163f93ea725' />
     <v-row>
       <v-col cols="12" md="4">
         <ServerConnector @joinroom="joinRoom($event)" />
       </v-col>
-      <v-col  cols="12" md="4">
+      <v-col cols="12" md="4">
         <HostOptions />
       </v-col>
       <v-col cols="12" md="4">
@@ -22,6 +23,7 @@
         <DiscordServer :discord-link="discordUrl"/>
       </v-col>
     </v-row>
+    <Ad placementId='5f77424b5c013163f93ea727' />
   </v-container>
 </template>
 
@@ -35,6 +37,7 @@ import Tutorial from '@/components/Tutorial.vue'
 import DiscordServer from '@/components/DiscordServer.vue'
 import GithubStar from '@/components/GithubStar.vue'
 import HostOptions from '@/components/HostOptions.vue'
+import Ad from '@/components/Ad.vue'
 import consts from '@/consts'
 
 @Component({
@@ -44,7 +47,8 @@ import consts from '@/consts'
     Tutorial,
     ServerConnector,
     ServerDisplayer,
-    HostOptions
+    HostOptions,
+    Ad
   }
 })
 export default class Home extends Vue {
